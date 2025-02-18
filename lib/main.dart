@@ -18,43 +18,22 @@ class Lab05 extends StatelessWidget {
           backgroundColor: Colors.blue[400],
           centerTitle: true,
         ),
-        body: Container(
-          height: double.infinity,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Icon(
-                Icons.star,
-                color: Colors.yellow,
-                size: 50,
+        body: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Container(
+            width: double.infinity,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: List.generate(
+                100,
+                (index) => Icon(
+                  Icons.star,
+                  size: index.toDouble(),
+                  color: Colors.yellow,
+                ),
               ),
-              Icon(
-                Icons.star,
-                color: Colors.yellow,
-                size: 50,
-              ),
-              Icon(
-                Icons.star,
-                color: Colors.yellow,
-                size: 50,
-              ),
-              Icon(
-                Icons.star,
-                color: Colors.yellow,
-                size: 50,
-              ),
-              Icon(
-                Icons.star,
-                color: Colors.yellow,
-                size: 50,
-              ),
-              Icon(
-                Icons.star_outline,
-                color: Colors.yellow,
-                size: 50,
-              ),
-            ],
+            ),
           ),
         ),
       ),
