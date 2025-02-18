@@ -13,4 +13,34 @@ class Lab05 extends StatelessWidget {
     return MaterialApp(
       title: "Basic UI - Flutter",
       home: Scaffold(
-        appBar: ,))
+        appBar: AppBar(
+          title: Text("Basic UI - Flutter"),
+          backgroundColor: Colors.blue[400],
+          centerTitle: true,
+          ),
+          body: Row(
+            children: [
+              Text(
+                "Hi, ",
+                style: TextStyle(
+                  color: Colors.red,
+                  fontSize: 30,
+                ),
+              ),
+              Text(
+                "This is ",
+                style: TextStyle(
+                  color: Colors.yellow,
+                  fontSize: 50,
+                ),
+              ),
+              Text(
+                "Flutter",
+                style: TextStyle(
+                  color: Colors.blue,
+                  fontSize: 20,
+                ),
+              )
+            ],)
+      )
+    )
